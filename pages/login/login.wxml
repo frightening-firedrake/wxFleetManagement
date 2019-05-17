@@ -1,0 +1,21 @@
+<!--pages/logon/logon.wxml-->
+<view class="pageWrap">
+  <image class="bg" src='/static/loginBg.png'></image>
+  <view class="panel">
+    <view class="panelTop"></view>
+    <view class="panelBody">
+      <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class="section">
+          <image class="icon" src='/static/user.png'></image>
+          <input cursor-spacing='10' name="user" type='text' placeholder="请输入账号"  />
+        </view>
+        <view class="section">
+          <image class="icon" src='/static/pass.png'></image>
+          <input cursor-spacing='10' name="pass" type='text' password placeholder="请输入密码"  />
+        </view>
+        <button form-type="submit" hover-class="buttonClick" form-type="submit">提交</button>
+      </form>
+    </view>
+    <view class="panelBottom"></view>
+  </view>
+</view>
